@@ -38,9 +38,6 @@ router.get('/softwaresAndBusiness', function (req, res) {
     res.render('softwaresAndBusiness.ejs');
 });
 
-
-
-
 //* Softwares Menu::
 router.get('/accountingSoftwares', function (req, res) {
     res.render('accountingSoftwares.ejs');

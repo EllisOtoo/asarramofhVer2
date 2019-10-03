@@ -1,0 +1,166 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+    <%include partials/headHTML.ejs%>
+
+    <style>
+        main {
+            height: 100vh;
+        }
+
+
+        footer {
+            margin-bottom: 0 !important;
+        }
+
+
+        .mapouter {
+            position: relative;
+            text-align: right;
+            height: 500px;
+            width: 600px;
+        }
+
+        .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 500px;
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/"><img src="img/logo new.png" alt=""></a>
+        <nav class="nav-list">
+            <ul class="main-nav">
+                <!-- <a href="http://localhost:3000/services">Services</a> -->
+                <li><a href="#"> <span id="toggleSign">+</span> Services</a>
+                    <ul style="font-size: 20pt !important;" data-open="close" id="subMenu1">
+
+                    </ul>
+                </li>
+                <li> <a href="#"><span id="toggleSign">+</span> Softwares</a>
+                    <ul id="subMenu2">
+                        <li><a style="font-size: 20pt !important;" href="/accountingSoftwares">Accounting Softwares</a>
+                        </li>
+                        <li><a style="font-size: 20pt !important;" href="/humanResource">Human Resource</a></li>
+                        <li><a style="font-size: 20pt !important;" href="/accountingSoftwares">Payroll</a></li>
+                    </ul>
+                </li>
+                <li><a href="/aboutUs">About Us</a> </li>
+                <li> <a href="/contactUs">Contact Us</a> </li>
+                <!-- <li></li> -->
+            </ul>
+        </nav>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+    <main style="margin-top: 10px !important">
+
+        <div class="contact1">
+            <div class="container-contact1">
+
+
+                <form action="/contact" method="POST" class="contact1-form validate-form">
+                    <span class="contact1-form-title">
+                        Contact Us
+                    </span>
+
+                    <div class="wrap-input1 validate-input" data-validate="Name is required">
+                        <input class="input1" type="text" name="name" placeholder="Name">
+                        <span class="shadow-input1"></span>
+                    </div>
+
+                    <div class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input class="input1" type="text" name="email" placeholder="Email">
+                        <span class="shadow-input1"></span>
+                    </div>
+
+                    <div class="wrap-input1 validate-input" data-validate="Subject is required">
+                        <input class="input1" type="text" name="subject" placeholder="Subject">
+                        <span class="shadow-input1"></span>
+                    </div>
+
+                    <div class="wrap-input1 validate-input" data-validate="Message is required">
+                        <textarea class="input1" name="message" placeholder="Message"></textarea>
+                        <span class="shadow-input1"></span>
+                    </div>
+
+                    <div class="container-contact1-form-btn">
+                        <button class="contact1-form-btn">
+                            <span>
+                                Send Email
+                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+                <div class="contact1-pic js-tilt" data-tilt>
+                    <img src="images/img-01.png" alt="IMG">
+                </div>
+            </div>
+        </div>
+
+
+        <!--===============================================================================================-->
+        <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="vendor/bootstrap/js/popper.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="vendor/select2/select2.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="vendor/tilt/tilt.jquery.min.js"></script>
+        <script>
+            $('.js-tilt').tilt({
+                scale: 1.1
+            })
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-23581568-13');
+        </script>
+
+        <!--===============================================================================================-->
+        <script src="js/main.js"></script>
+    </main>
+    <%include partials/footer.ejs%>
+    <script src="js/nav.js"></script>
+
+</body>
+
+</html>

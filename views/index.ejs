@@ -1,0 +1,176 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Asar Ramofh Ltd.</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a08eb5b7e4.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <%include partials/header.ejs%>
+    <main>
+        <section class="banner">
+            <div class="slideOne">
+                <div id="caption">
+                    <h2>DO MORE
+                        <br> BY DOING
+                        LESS</h2>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="intro">
+            <article>
+                <header>
+                    <h2 style="padding-left: 0;">We Understand Your Need</h2>
+                </header>
+                <p>
+                    Contemporary businesses continuously seek better ways to fulfill their core mandates. They want to
+                    achieve their objectives and also want to manage the other non-core functions of their operations
+                    efficiently. They look for simple and convenient ways to meet the regulatory and compliance
+                    requirements associated with their industry. </p>
+            </article>
+
+        </section>
+
+        <section class="clientProfiles">
+            <header>
+                <h2>Client Profiles</h2>
+            </header>
+            <section class="clientProfBoxes">
+                <article class="clientbox" id="clientOne">
+                    <img src="img/large.jpg" alt="">
+                    <div>
+                        <h2 class="firstH1">Start-Ups and FinTechs</h2>
+                        <p>We believe Startups are great business in the waiting. They have the potential to
+                            grow into fully fledged businesses if the right advice and initial steps are taken
+                            from the onset. </p>
+                        <a href="/clientProfiles"><button class="seeMore">See More</button></a>
+                    </div>
+                </article>
+                <article class="clientbox" id="clientOne">
+                    <img src="img/large.jpg" alt="">
+                    <div>
+                        <h2>SMEs</h2>
+                        <p>Small to Medium Enterprises form the majority of business in many countries. We focus on
+                            ...
+                        </p>
+                        <button class="seeMore">See More</button>
+                    </div>
+
+                </article>
+                <article class="clientbox" id="clientOne">
+                    <img src="img/large.jpg" alt="">
+                    <div class="ngos">
+                        <h2>NGOs and Charities
+                        </h2>
+                        <p>In your quest to provide a social good there are usually some challenges. Donors want to be
+                            sure they are receiving value for money. They also want to assess whether the beneficiaries
+                            are receiving the relevant impact.</p>
+                        <button class="seeMore">See More</button>
+                    </div>
+
+                </article>
+                <article class="clientbox clientbox-4" id="clientOne">
+                    <img src="img/large.jpg" alt="">
+                    <div>
+                        <h2>Large Multinational Companies</h2>
+                        <p>Our Payroll Software has proven very useful for large companies that need to process payroll
+                            monthly for large numbers of employees. Reduce your tax errors and time for preparing the
+                            multiple statutory compliance report by having all reports ready at just a click of a
+                            button. </p>
+                        <button class="seeMore">See More</button>
+                    </div>
+
+                </article>
+                <article class="clientbox clientbox-4" id="clientOne">
+                    <img src="img/large.jpg" alt="">
+                    <div>
+                        <h2>Branch Companies and Liaison Offices
+                        </h2>
+                        <p>Setting up a branch company or liaison office is very much a part of doing business in a
+                            foreign company. It is an option usually used to survey the market that the parent company
+                            intends to invest in in the future.
+                        </p>
+                        <button class="seeMore">See More</button>
+                    </div>
+
+                </article>
+            </section>
+        </section>
+        <section class="parentLogo">
+            <header>
+                <h2>Regulatory Agencies</h2>
+            </header>
+            <div id="slideContainer" class="container">
+                <section class="customer-logos slider">
+                    <div class="slide"><img src="img/partner_logos/coat_of_arms.png"></div>
+                    <div class="slide"><img src="img/partner_logos/energy_com.png">
+                    </div>
+                    <div class="slide"><img src="img/partner_logos/Ghana_Immigration_Service_logo.jpg">
+                    </div>
+                    <div class="slide"><img src="img/partner_logos/ghana_revenue.jpg"></div>
+                    <div class="slide"><img src="img/partner_logos/gipc.jpg"></div>
+                    <div class="slide"><img src="img/partner_logos/minerals-commission-logo.jpg">
+                    </div>
+                    <div class="slide"><img src="img/partner_logos/petroleum_com.png">
+                    </div>
+                    <div class="slide"><img src="img/partner_logos/reg_gen.png">
+                    </div>
+                    <div class="slide"><img src="img/partner_logos/ssnit.jpg">
+                    </div>
+                </section>
+            </div>
+
+            <section class="newsletter">
+                <header>
+                    <h2>Subscribe to Our Newsletter</h2>
+                </header>
+                <form id="newsletter" action="/send" method="POST" class="newsLetterForm">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="text" name='email' placeholder="Your Email">
+                    <button type="submit">Subscibe</in>
+                </form>
+            </section>
+    </main>
+    <%include partials/footer.ejs%>
+
+    <script src="js/nav.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+    </script>
+</body>
+
+</html>

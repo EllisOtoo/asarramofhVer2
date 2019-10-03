@@ -1,0 +1,58 @@
+@mixin centerSection {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between
+}
+
+$secondary-color:#EFBD1E;
+
+
+.newsletter {
+    @include centerSection();
+    flex-direction: column;
+    margin-bottom: 20px;
+    // align-items: center;
+
+    header {
+        margin-bottom: 20px;
+    }
+
+    .newsLetterForm {
+        background: #eee;
+        display: flex;
+        padding: 20px 0px;
+        flex-direction: column;
+        justify-content: flex-start;
+        // border-top: 2px solid $secondary-color;
+
+        button {
+            align-self: center;
+            width: 60%;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+            background: #EFBD1E;
+            font-size: 14pt
+        }
+
+        input {
+            margin-bottom: 10px;
+            width: 90%;
+            align-self: center;
+            border: none;
+            height: 40px;
+            padding-left: 10px;
+            border-radius: 10px;
+            font-size: 12pt // padding: 0 10px;
+        }
+    }
+
+    div {
+        background: #eee;
+        width: 400px;
+        padding: 50px 0;
+        // height: 200px;
+    }
+}

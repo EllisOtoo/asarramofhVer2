@@ -1,0 +1,67 @@
+.newsletter {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.newsletter header {
+  margin-bottom: 20px;
+}
+
+.newsletter .newsLetterForm {
+  background: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.newsletter .newsLetterForm button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 60%;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background: #EFBD1E;
+  font-size: 14pt;
+}
+
+.newsletter .newsLetterForm input {
+  margin-bottom: 10px;
+  width: 90%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 10px;
+  font-size: 12pt;
+}
+
+.newsletter div {
+  background: #eee;
+  width: 400px;
+  padding: 50px 0;
+}
+/*# sourceMappingURL=contactForm.css.map */

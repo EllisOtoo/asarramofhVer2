@@ -1,3 +1,5 @@
+//* MOBILE SPECIFIC CSS
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -192,16 +194,16 @@ header {
 
         //     background-size: cover;
         #caption {
-            height: 22vh;
-            border-left: 4px solid $secondary-color;
-            padding-left: 5px;
+
+            border-left: 3px solid $secondary-color;
+            // padding-left: 5px;
             // left: 10px;
 
             h2 {
-                padding-top: 3vh;
+                // padding-top: 3vh;
                 font-size: 30pt;
                 color: white;
-                line-height: 27pt
+                // line-height: 27pt
             }
         }
     }
@@ -233,8 +235,14 @@ header {
 
 .clientProfiles {
     margin-top: 30px;
+    padding-bottom: 50px !important;
     background: rgb(247, 247, 247);
+    padding-left: 30px;
 
+    a {
+        text-decoration: none;
+        color: $primary-color
+    }
 
     .seeMore {
         // display: none
@@ -425,6 +433,8 @@ footer>section {
     .clientProfiles {
         width: 80vw;
         margin: 0 auto;
+        padding-bottom: 50px !important;
+        padding-left: 10px !important;
 
         .clientProfBoxes {
             margin-top: 30px;

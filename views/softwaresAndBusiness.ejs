@@ -4,11 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Software and Business Applications</title>
+    <%include partials/headHTML.ejs%>
+    <style>
+        main {
+            min-height: 100vh;
+        }
+    </style>
 </head>
 
 <body>
-    Softwares and Business
+    <%include partials/header.ejs%>
+
+    <main>
+        <section class="banner">
+            <div>
+                <h1 id="title">Software and Business Applications </h1>
+            </div>
+        </section>
+        <section class="info">
+            <h2>QuickBooks ®</h2>
+            <p>
+                QuickBooks is an accounting software intended for Small to Medium sized businesses. It provides on-site
+                (server) based desktop solution or cloud based online solutions.
+            </p>
+            <p>It takes care of your:</p>
+            <ul>
+                <li>Sales and accounts receivable
+                </li>
+                <li> Inventory management
+                </li>
+                <li>Purchases</li>
+                <li> Expenses and Accounts payables</li>
+                <li>A/R and A/P Aging</li>
+                <li>Bank payments and deposits</li>
+                <li>Cash and Bank reconciliation in the system</li>
+                <li>Fixed Asset listing
+                </li>
+                <li>Budgeting </li>
+                <li>etc</li>
+
+            </ul>
+            <p>
+                QuickBooks provides relevant reports for your business.
+            </p>
+        </section>
+
+    </main>
+
+    <%include partials/footer.ejs%>
+    <script src="js/nav.js"></script>
+    <script>
+        // document.querySelector('#title').textContent = document.querySelector('#title').textContent.toLocaleLowerCase();
+    </script>
 </body>
 
 </html>

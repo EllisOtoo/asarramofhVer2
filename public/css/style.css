@@ -177,6 +177,10 @@ header img {
   }
 }
 
+.clientbox-5 {
+  height: 750px;
+}
+
 .intro {
   margin-top: 30px;
   margin-bottom: 50px !important;

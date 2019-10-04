@@ -397,6 +397,7 @@ footer > section img {
   }
   .clientProfiles .clientProfBoxes img {
     width: 200px;
+    height: 200px;
   }
   #slideContainer {
     height: 200px !important;

@@ -55,13 +55,6 @@ h4 {
 
 
 header {
-    /*     position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 6vh;
-    background: #fff; */
-    // z-index: 10000 !important;
 
     .nav-list {
         z-index: 100;
@@ -186,6 +179,7 @@ header {
     .slideOne {
         background: url('../img/homepage-banner.png');
         background-repeat: no-repeat;
+        // width: 10px;
         background-size: cover;
         height: 80vh;
         padding: 30px;
@@ -196,6 +190,8 @@ header {
         #caption {
 
             border-left: 3px solid $secondary-color;
+            width: 90vw;
+            // background-color: green;
             // padding-left: 5px;
             // left: 10px;
 
@@ -211,6 +207,8 @@ header {
 
 ;
 
+
+//* MOBILE CSS
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .banner {
         // display: none;
@@ -223,6 +221,20 @@ header {
             background-size: cover; */
             background-position: -200px 0;
 
+        }
+    }
+
+    #caption {
+
+        border-left: 3px solid $secondary-color;
+        // padding-left: 5px;
+        // left: 10px;
+
+        h2 {
+            // padding-top: 3vh;
+            font-size: 34pt !important;
+            color: white;
+            // line-height: 27pt
         }
     }
 }

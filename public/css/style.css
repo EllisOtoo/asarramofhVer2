@@ -29,12 +29,6 @@ h4 {
 }
 
 header {
-  /*     position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 6vh;
-    background: #fff; */
   /* Smartphones (portrait and landscape) ----------- */
 }
 
@@ -156,6 +150,7 @@ header img {
 
 .banner .slideOne #caption {
   border-left: 3px solid #EFBD1E;
+  width: 90vw;
 }
 
 .banner .slideOne #caption h2 {
@@ -172,6 +167,13 @@ header img {
             background-repeat: no-repeat;
             background-size: cover; */
     background-position: -200px 0;
+  }
+  #caption {
+    border-left: 3px solid #EFBD1E;
+  }
+  #caption h2 {
+    font-size: 34pt !important;
+    color: white;
   }
 }
 

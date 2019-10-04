@@ -67,7 +67,7 @@ header .nav-list a {
 }
 
 header .nav-list .expandServicesList {
-  height: 240px;
+  height: 260px;
   -webkit-transition: height 0.4s;
   transition: height 0.4s;
 }

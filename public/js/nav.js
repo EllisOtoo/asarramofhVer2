@@ -25,8 +25,8 @@ function addlistItems1() {
 
     let servicesSubMenu = ['Tax Advisory',
         'Accounting Services', 'Payroll & HR Support',
-        'Internal Audit,<br> Risk and Compliance',
-        'Business Registration and<br> Company Secretarial',
+        'Internal Audit, Risk and ...',
+        'Business Registration and<br>',
         'Regulatory Compliance',
         'Softwares and Business Applications'
     ];

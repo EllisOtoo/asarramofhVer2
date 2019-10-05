@@ -46,9 +46,9 @@ router.get('/humanResource', function (req, res) {
     // res.send('Softwares')
     res.render('humanResource.ejs');
 });
-router.get('/payrollAndHr', function (req, res) {
-    // res.send('Softwares')
-    res.render('payrollAndHr.ejs');
+router.get('/payrollSoftwares', function (req, res) {
+    // res.send('Payroll Softwares')
+    res.render('payrollSoftwares.ejs');
 });
 router.get('/clientProfiles', function (req, res) {
     res.render('clientProfiles.ejs');

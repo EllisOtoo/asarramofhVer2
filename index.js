@@ -30,30 +30,16 @@ app.listen(3000, function () { // listen method with callback
 
 // Set static resources
 app.use(express.static(path.join(__dirname, 'public')))
-/* 
-    app.get('/', function (req, res) {
-        res.send('Welcome')
-}); */
 
 
-
-app.get('/accounting', function (resp, res) {
-    res.render('accounting.ejs')
-});
-
-app.get('/sample', function (resp, res) {
-    res.render('sample.ejs');
-});
-
-
-app.post('/test', function (req, res) {
+/* app.post('/test', function (req, res) {
     setTimeout(() => {
         console.log('I was cqalled')
     }, 4000);
     res.send('Helo')
-})
+}) */
 
-app.post('/contact', function (req, res) {
+/* app.post('/contact', function (req, res) {
     const output = `
 <p>You have a new contact request</p>
 <ul>
@@ -92,7 +78,7 @@ app.post('/contact', function (req, res) {
     res.render('contactUs.ejs')
 })
 
-
+ */
 app.post('/send', function (req, res) {
     const output = `
 <p>You have a new newsletter request</p>

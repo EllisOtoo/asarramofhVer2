@@ -462,4 +462,8 @@ footer > section img {
   display: -ms-flexbox;
   display: flex;
 }
+
+.copyIcon {
+  font-size: 10pt;
+}
 /*# sourceMappingURL=style.css.map */

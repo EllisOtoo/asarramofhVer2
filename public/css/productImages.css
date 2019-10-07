@@ -24,7 +24,7 @@ footer p {
 }
 
 .info img {
-  width: 200px;
+  width: 30vw;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {

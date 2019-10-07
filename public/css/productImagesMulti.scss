@@ -1,0 +1,70 @@
+footer p {
+    width: max-content;
+}
+
+.banner img {
+    width: 100vw;
+}
+
+/* Desktops and laptops ----------- */
+
+.info>#walletHR {
+    display: flex;
+    flex-direction: row;
+
+    article {
+        // width: 50vw;
+        // display: inline-block;
+    }
+
+    p,
+    ul {
+        // display: none;
+        // width: 40vw;
+    }
+
+    img {
+
+        // width: 200px;
+        // display: none;
+    }
+
+}
+
+.info>#quickPayroll {
+    display: flex;
+    flex-direction: row;
+
+    img {
+        width: 300px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .info>#walletHR {
+        // display: none;
+        flex-direction: column-reverse;
+    }
+
+    .info>#quickPayroll {
+        // display: none;    
+        flex-direction: column-reverse;
+
+        p {
+            width: 90vw
+        }
+    }
+
+    .info img {
+        width: 80vw;
+    }
+
+    .info article {
+        margin-top: 40px;
+    }
+}

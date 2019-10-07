@@ -33,6 +33,7 @@ header {
 }
 
 header .nav-list {
+  overflow-y: scroll;
   z-index: 100;
   margin-top: 10px;
   -webkit-transform: translateX(100%);
@@ -366,7 +367,11 @@ footer > section img {
     margin: 0 auto;
   }
   .newsLetter {
-    width: 50vw;
+    width: 40vw;
+    margin-bottom: 60px !important;
+  }
+  .newsLetter #newsletterH2 {
+    margin-left: -30px;
   }
   .parentLogo header {
     margin-left: 150px;

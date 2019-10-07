@@ -9,8 +9,9 @@
         font-size: 13pt;
     }
 
-    .info p {
-        width: 65vw
+    .info article>p {
+        width: 45vw;
+        /* display: none */
     }
 }
 

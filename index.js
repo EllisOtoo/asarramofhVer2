@@ -32,53 +32,7 @@ app.listen(3000, function () { // listen method with callback
 app.use(express.static(path.join(__dirname, 'public')))
 
 
-/* app.post('/test', function (req, res) {
-    setTimeout(() => {
-        console.log('I was cqalled')
-    }, 4000);
-    res.send('Helo')
-}) */
 
-/* app.post('/contact', function (req, res) {
-    const output = `
-<p>You have a new contact request</p>
-<ul>
-    <li>${req.body.name}</li>
-    <li>${req.body.email}</li>
-    <li>${req.body.subject}</li>
-    <li>${req.body.message}</li>
-    <li>${new Date()}</li>
-</ul>
-`
-
-    var transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: 'ellisotoo@gmail.com',
-            pass: 'thinkglobal1'
-        }
-    });
-
-
-    var mailOptions = {
-        from: 'Node Mailer',
-        to: 'brandexcelnow@gmail.com',
-        subject: 'New Asar Ramofh Contact',
-        text: `${output}`,
-        html: output
-    };
-
-    transporter.sendMail(mailOptions, function (error, info) {
-        if (error) {
-            console.log(error);
-        } else {
-            console.log('Email sent: ' + info.response);
-        }
-    });
-    res.render('contactUs.ejs')
-})
-
- */
 app.post('/send', function (req, res) {
     const output = `
 <p>You have a new newsletter request</p>
@@ -113,5 +67,6 @@ app.post('/send', function (req, res) {
             console.log('Email sent: ' + info.response);
         }
     });
-    res.render('index.ejs')
+    res.render('index.ejs');
+    console.log(output)
 })

@@ -332,6 +332,21 @@ footer {
   background: #114A69;
 }
 
+footer ul {
+  list-style: none;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 12pt;
+}
+
+footer ul a:hover {
+  color: #EFBD1E;
+  text-decoration: none;
+}
+
 footer > section {
   padding-top: 30px;
   color: white !important;

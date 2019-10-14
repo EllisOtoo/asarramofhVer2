@@ -347,7 +347,7 @@ footer ul {
 }
 
 footer ul li {
-  border-bottom: 0.5px dashed #cacaca;
+  border-bottom: 0.5px solid #cacaca;
 }
 
 footer ul a {

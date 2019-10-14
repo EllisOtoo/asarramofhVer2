@@ -10,10 +10,10 @@
   "description": "",
   "dependencies": {
     "body-parser": "*",
+    "deasync": "*",
     "ejs": "*",
     "express": "*",
-    "path": "*",
-    "node-mailer": "^0.1.1",
-    "deasync": "*"
+    "nodemailer": "^6.3.1",
+    "path": "*"
   }
 }

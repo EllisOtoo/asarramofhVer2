@@ -152,11 +152,22 @@ header img {
 .banner .slideOne #caption {
   border-left: 3px solid #EFBD1E;
   width: 90vw;
+  position: relative;
+  top: -50px;
 }
 
 .banner .slideOne #caption h2 {
   font-size: 30pt;
   color: white;
+  margin-bottom: 0 !important;
+}
+
+.banner .slideOne #caption h3 {
+  margin-top: 0 !important;
+  padding-left: 25px;
+  position: relative;
+  top: -20px !important;
+  color: #eed182;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {

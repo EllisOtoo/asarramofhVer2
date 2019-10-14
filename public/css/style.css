@@ -351,7 +351,7 @@ footer ul li:last-child {
 }
 
 footer ul li {
-  border-bottom: 0.5px solid #cacaca;
+  border-bottom: 0.5px solid rgba(141, 141, 141, 0.719);
 }
 
 footer ul a {

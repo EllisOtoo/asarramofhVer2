@@ -179,7 +179,7 @@ header img {
 }
 
 .clientbox-5 {
-  height: 750px;
+  min-height: 750px;
 }
 
 .intro {
@@ -423,8 +423,8 @@ footer > section img {
     grid-column-gap: 30px;
     -ms-grid-columns: (minmax(200px, 600px))[2];
         grid-template-columns: repeat(2, minmax(200px, 600px));
-    -ms-grid-rows: (200px)[2];
-        grid-template-rows: repeat(2, 200px);
+    -ms-grid-rows: (250px)[2];
+        grid-template-rows: repeat(2, 250px);
   }
   .clientProfiles .clientProfBoxes .clientbox {
     display: -webkit-box;

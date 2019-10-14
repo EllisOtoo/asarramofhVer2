@@ -241,7 +241,7 @@ header {
 }
 
 .clientbox-5 {
-    height: 750px;
+    min-height: 750px;
 }
 
 .intro {
@@ -504,7 +504,7 @@ footer>section {
             grid-column-gap: 30px;
             // grid-template-columns: 40vw 40vw;
             grid-template-columns: repeat(2, minmax(200px, 600px));
-            grid-template-rows: repeat(2, 200px);
+            grid-template-rows: repeat(2, 250px);
 
 
             .clientbox {

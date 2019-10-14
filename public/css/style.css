@@ -346,6 +346,10 @@ footer ul {
   list-style: none;
 }
 
+footer ul li:last-child {
+  border-bottom: none;
+}
+
 footer ul li {
   border-bottom: 0.5px solid #cacaca;
 }

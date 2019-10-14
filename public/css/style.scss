@@ -391,7 +391,7 @@ header {
 
 
 footer {
-
+    // height: 500px;
     background: $primary-color;
 
     #aboutUs a {
@@ -407,6 +407,11 @@ footer {
 
     ul {
         list-style: none;
+
+        li:last-child {
+            border-bottom: none;
+            // display: none;
+        }
 
         li {
             border-bottom: 0.5px solid rgb(202, 202, 202);

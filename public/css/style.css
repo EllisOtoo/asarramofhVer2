@@ -332,12 +332,22 @@ footer {
   background: #114A69;
 }
 
+footer #aboutUs a {
+  text-decoration: none;
+  color: white;
+}
+
+footer #aboutUs a:hover {
+  color: #EFBD1E;
+  text-decoration: none;
+}
+
 footer ul {
   list-style: none;
 }
 
 footer ul li {
-  border-bottom: 0.5px dashed #0f293f;
+  border-bottom: 0.5px dashed #cacaca;
 }
 
 footer ul a {

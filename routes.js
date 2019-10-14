@@ -65,6 +65,20 @@ router.get('/aboutUs', function (req, res) {
     res.render('aboutUs.ejs');
 });
 
+//* TESTING ALL METHOD FOR ROUTER
+router.all('/allTest', function (req, res) {
+    res.render('sample.ejs')
+    // console.log('Hello JS');
+    // res.render () 
+
+})
+
+router.all('/allTest1', function (req, res) {
+    res.send('Testing the ALL Method')
+    // console.log('Hello JS');
+    // res.render () 
+
+})
 
 
 module.exports = router;

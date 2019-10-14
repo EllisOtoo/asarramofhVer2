@@ -451,6 +451,12 @@ footer > section img {
   #slideContainer {
     height: 200px !important;
   }
+  footer #aboutUS {
+    width: 250px !important;
+  }
+  footer #services {
+    min-width: 500px !important;
+  }
   footer #connectWithUs a {
     margin-right: 10px;
     color: #3d7494;

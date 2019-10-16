@@ -466,7 +466,7 @@ footer > section img {
     width: 250px !important;
   }
   footer #services {
-    min-width: 500px !important;
+    width: 412px !important;
   }
   footer #connectWithUs a {
     margin-right: 10px;

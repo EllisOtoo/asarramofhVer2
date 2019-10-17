@@ -51,6 +51,13 @@ app.post('/send', function (req, res) {
             user: 'ellisotoo@gmail.com',
             pass: 'thinkglobal1'
         }
+        /*   host: 'mail.privateemail.com',
+        port: 465,
+        secure: true, // true for 465, false for other ports
+        auth: {
+            user: 'ellis@asarramofh.com', // generated ethereal user
+            pass: 'thinkglobal' // generated ethereal password
+        } */
     });
 
 

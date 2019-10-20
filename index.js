@@ -36,6 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 
 app.post('/send', function (req, res) {
+    console.log(req.body)
     const output = `
 <p>You have a new newsletter request</p>
 <ul>
@@ -46,18 +47,18 @@ app.post('/send', function (req, res) {
 `
 
     var transporter = nodemailer.createTransport({
-        service: 'gmail',
+        /*   service: 'gmail',
+          auth: {
+              user: 'ellisotoo@gmail.com',
+              pass: 'thinkglobal1'
+          } */
+        host: 'server213.web-hosting.com',
+        port: 587,
+        secure: false,
         auth: {
-            user: 'ellisotoo@gmail.com',
-            pass: 'thinkglobal1'
+            user: 'ellis@asarramofh.com',
+            pass: 'thinkglobal'
         }
-        /*  host: 'server213.web-hosting.com',
-         port: 465,
-         secure: true, // true for 465, false for other ports
-         auth: {
-             user: 'ellis@asarramofh.com', // generated ethereal user
-             pass: 'thinkglobal' // generated ethereal password
-         } */
     });
 
 
@@ -77,5 +78,5 @@ app.post('/send', function (req, res) {
         }
     });
     res.render('index.ejs');
-    console.log(output)
+    // console.log(output)
 })

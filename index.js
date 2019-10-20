@@ -81,5 +81,55 @@ function handleMailRequest(req, res) {
     // console.log(output)
 }
 
-app.post('/contact', handleMailRequest);
+app.post('/contact', function (req, res) {
+    console.log(req.body)
+    const output = `
+<p>You have a new contact request</p>
+<ul>
+    <li>${req.body.name}</li>
+    <li>${req.body.email}</li>
+    <li>${req.body.subject}</li>
+    <li>${req.body.message}</li>
+    <li>${new Date()}</li>
+</ul>
+`
+
+    var transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true,
+        auth: {
+            user: 'ellisotoo@gmail.com',
+            pass: 'Thinkglobal1a2'
+        }
+        /*    host: 'server213.web-hosting.com',
+           port: 465,
+           secure: true,
+           auth: {
+               user: 'ellis@asarramofh.com',
+               pass: 'thinkglobal'
+           } */
+    });
+
+
+    var mailOptions = {
+        from: 'ellis@asarramofh.com',
+        to: 'brandexcelnow@gmail.com',
+        subject: 'New Asar Ramofh Contact',
+        text: `${output}`,
+        html: output
+    };
+    transporter.sendMail(mailOptions, function (error, info) {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log('Email sent: ' + info.response);
+        }
+    });
+    res.render('contactUs.ejs');
+    // console.log(output)
+});
+
+
+
 app.post('/send', handleMailRequest)

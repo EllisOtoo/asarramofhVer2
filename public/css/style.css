@@ -308,7 +308,7 @@ header img {
   border-top: 2px solid #EFBD1E;
 }
 
-.newsletter .newsLetterForm button {
+.newsletter .newsLetterForm input[type="submit"] {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;

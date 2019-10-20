@@ -34,8 +34,7 @@ app.listen(3000, function () { // listen method with callback
 app.use(express.static(path.join(__dirname, 'public')))
 
 
-
-app.post('/send', function (req, res) {
+function handleMailRequest(req, res) {
     console.log(req.body)
     const output = `
 <p>You have a new newsletter request</p>
@@ -47,13 +46,15 @@ app.post('/send', function (req, res) {
 `
 
     var transporter = nodemailer.createTransport({
-        service: 'gmail',
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true,
         auth: {
             user: 'ellisotoo@gmail.com',
-            pass: 'thinkglobal1'
+            pass: 'Thinkglobal1a2'
         }
         /*    host: 'server213.web-hosting.com',
-           port: 587,
+           port: 465,
            secure: true,
            auth: {
                user: 'ellis@asarramofh.com',
@@ -78,4 +79,7 @@ app.post('/send', function (req, res) {
     });
     res.render('index.ejs');
     // console.log(output)
-})
+}
+
+app.post('/contact', handleMailRequest);
+app.post('/send', handleMailRequest)

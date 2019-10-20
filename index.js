@@ -47,14 +47,11 @@ app.post('/send', function (req, res) {
 `
 
     var transporter = nodemailer.createTransport({
-        /*   service: 'gmail',
-          auth: {
-              user: 'ellisotoo@gmail.com',
-              pass: 'thinkglobal1'
-          } */
+
+        name: 'asarramofh.com',
         host: 'server213.web-hosting.com',
         port: 587,
-        secure: false,
+        secure: true,
         auth: {
             user: 'ellis@asarramofh.com',
             pass: 'thinkglobal'
@@ -63,13 +60,12 @@ app.post('/send', function (req, res) {
 
 
     var mailOptions = {
-        from: 'Node Mailer',
+        from: 'ellis@asarramofh.com',
         to: 'brandexcelnow@gmail.com',
         subject: 'New Asar Ramofh Contact',
         text: `${output}`,
         html: output
     };
-
     transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
             console.log(error);

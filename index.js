@@ -47,15 +47,18 @@ app.post('/send', function (req, res) {
 `
 
     var transporter = nodemailer.createTransport({
-
-        name: 'asarramofh.com',
-        host: 'server213.web-hosting.com',
-        port: 587,
-        secure: true,
+        service: 'gmail',
         auth: {
-            user: 'ellis@asarramofh.com',
-            pass: 'thinkglobal'
+            user: 'ellisotoo@gmail.com',
+            pass: 'thinkglobal1'
         }
+        /*    host: 'server213.web-hosting.com',
+           port: 587,
+           secure: true,
+           auth: {
+               user: 'ellis@asarramofh.com',
+               pass: 'thinkglobal'
+           } */
     });
 
 

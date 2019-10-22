@@ -171,6 +171,10 @@ header img {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /*  .copyright {
+        margin-top: 200px !important;
+        // display: none;
+    } */
   #contactInfo {
     margin-left: 10vw;
   }
@@ -362,10 +366,6 @@ footer ul {
 
 footer ul li:last-child {
   border-bottom: none;
-}
-
-footer ul li {
-  border-bottom: 0.5px solid rgba(141, 141, 141, 0.719);
 }
 
 footer ul a {

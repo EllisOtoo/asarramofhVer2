@@ -223,6 +223,11 @@ header {
 
 //* MOBILE CSS
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /*  .copyright {
+        margin-top: 200px !important;
+        // display: none;
+    } */
+
     #contactInfo {
         // display: none;
         margin-left: 10vw;
@@ -431,7 +436,7 @@ footer {
         }
 
         li {
-            border-bottom: 0.5px solid rgba(141, 141, 141, 0.719);
+            // border-bottom: 0.5px solid rgba(141, 141, 141, 0.719);
         }
 
         a {

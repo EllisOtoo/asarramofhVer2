@@ -643,3 +643,21 @@ footer>section {
     font-size: 10pt;
     // display: none;
 }
+
+
+
+// * TARGETING EDGE && INTERNET EXPLORER
+@supports (-ms-ime-align:auto) {
+    body {
+        // display: none;
+    }
+
+
+
+    .main-nav {
+        margin-left: 600px !important;
+        // margin: 0 au !important;
+        // color: #114A69;
+        // display: none;
+    }
+}

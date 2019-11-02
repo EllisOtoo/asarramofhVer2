@@ -39,12 +39,12 @@ router.get('/softwaresAndBusiness', function (req, res) {
 });
 
 //* Softwares Menu::
-router.get('/accountingSoftwares', function (req, res) {
-    res.render('accountingSoftwares.ejs');
+router.get('/quickbooks', function (req, res) {
+    res.render('quickbooks.ejs');
 });
-router.get('/humanResource', function (req, res) {
+router.get('/wallethr', function (req, res) {
     // res.send('Softwares')
-    res.render('humanResource.ejs');
+    res.render('wallethr.ejs');
 });
 router.get('/payrollSoftwares', function (req, res) {
     // res.send('Payroll Softwares')

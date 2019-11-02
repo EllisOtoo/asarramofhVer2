@@ -524,4 +524,10 @@ footer > section img {
 .copyIcon {
   font-size: 10pt;
 }
+
+@supports (-ms-ime-align: auto) {
+  .main-nav {
+    margin-left: 600px !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */

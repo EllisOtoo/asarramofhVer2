@@ -65,6 +65,9 @@ router.get('/aboutUs', function (req, res) {
     res.render('aboutUs.ejs');
 });
 
+
+
+
 //* TESTING ALL METHOD FOR ROUTER
 router.all('/allTest', function (req, res) {
     res.render('sample.ejs')

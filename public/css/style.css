@@ -382,9 +382,9 @@ footer ul a:hover {
 footer > section {
   padding-top: 30px;
   color: white !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -393,6 +393,20 @@ footer > section {
 
 footer > section #connectWithUs {
   margin-left: 0px;
+}
+
+footer > section #certified {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  margin-left: -20px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+footer > section #certified img {
+  width: 150px;
 }
 
 footer > section div {

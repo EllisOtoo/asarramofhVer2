@@ -362,6 +362,9 @@ footer #aboutUs a:hover {
 
 footer ul {
   list-style: none;
+  /*   li {
+            // border-bottom: 0.5px solid rgba(141, 141, 141, 0.719);
+        } */
 }
 
 footer ul li:last-child {
@@ -398,8 +401,6 @@ footer > section #connectWithUs {
 footer > section #certified {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
   margin-left: -20px;
   -webkit-column-gap: 30px;
           column-gap: 30px;
@@ -485,6 +486,9 @@ footer > section img {
   footer #services {
     width: 412px !important;
   }
+  footer #certifiedPartners {
+    width: 350px !important;
+  }
   footer #connectWithUs a {
     margin-right: 10px;
     color: #3d7494;
@@ -540,6 +544,9 @@ footer > section img {
 }
 
 @supports (-ms-ime-align: auto) {
+  /*  body {
+        // display: none;
+    } */
   .main-nav {
     margin-left: 600px !important;
   }

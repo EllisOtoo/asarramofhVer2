@@ -434,9 +434,9 @@ footer {
             // display: none;
         }
 
-        li {
+        /*   li {
             // border-bottom: 0.5px solid rgba(141, 141, 141, 0.719);
-        }
+        } */
 
         a {
             text-decoration: none;
@@ -466,9 +466,8 @@ footer>section {
 
     #certified {
         display: grid;
-        grid-template-columns: 50% 50%;
+        // grid-template-columns: 50% 50%;
         margin-left: -20px;
-
         column-gap: 30px;
 
         img {
@@ -583,7 +582,15 @@ footer>section {
             width: 412px !important;
         }
 
+        #certifiedPartners {
+            // display: none !important;
+            width: 350px !important;
+        }
+
         #connectWithUs {
+
+            // margin-left: -100px;
+
             a {
                 margin-right: 10px;
                 color: rgb(61, 116, 148);
@@ -659,9 +666,9 @@ footer>section {
 
 // * TARGETING EDGE && INTERNET EXPLORER
 @supports (-ms-ime-align:auto) {
-    body {
+    /*  body {
         // display: none;
-    }
+    } */
 
 
 

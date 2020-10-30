@@ -28,7 +28,6 @@ function addlistItems1() {
         'Internal Audit, Risk and ...',
         'Business Registration and<br>',
         'Regulatory Compliance',
-        'Softwares and Business Applications'
     ];
 
 
@@ -39,7 +38,7 @@ function addlistItems1() {
         '/internalAudit',
         '/businessRegistration',
         '/regulationComp',
-        '/softwaresAndBusiness'
+        // '/softwaresAndBusiness'
     ]
 
     for (let i = 0; i < servicesSubMenu.length; i++) {
@@ -75,34 +74,12 @@ function addlistItems2() {
 }
 
 addlistItems1();
-// addlistItems2();
-
 
 
 function expandlistItems01() {
-    /*  let toggleSign = document.getElementById('toggleSign');
-     if (toggleSign.textContent == '+') {
-         toggleSign.textContent = '-'
-     } else {
-         toggleSign.textContent = '+'
-     } */
-    console.log('Hello');
     subMenu1.classList.toggle("expandServicesList");
-    console.log(subMenu1)
-    // subMenu1.classList.add('expandFirstList');
 }
 
 function expandlistItems02() {
-    /*  let toggleSign = document.getElementById('toggleSign');
-     if (toggleSign.textContent == '+') {
-         toggleSign.textContent = '-'
-     } else {
-         toggleSign.textContent = '+'
-
-     } */
-    console.log('Hello');
     subMenu2.classList.toggle("expandFirstList");
-    console.log(subMenu1)
-    // subMenu1.classList.add('expandFirstList');
 }
-// console.log(subMenu1['data-open'])

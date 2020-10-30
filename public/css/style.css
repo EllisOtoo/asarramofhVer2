@@ -28,6 +28,15 @@ h4 {
   margin-left: 0px;
 }
 
+#mainPageNav {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100vw;
+  padding-bottom: 2px;
+  z-index: 10;
+}
+
 header {
   /* Smartphones (portrait and landscape) ----------- */
 }
@@ -46,7 +55,6 @@ header .nav-list {
   color: white;
   height: 95vh;
   position: fixed;
-  opacity: 0.98;
   top: 5vh;
   width: 100vw;
   /*  ul>li {
@@ -62,13 +70,13 @@ header .nav-list a {
 }
 
 header .nav-list .expandServicesList {
-  height: 260px;
+  height: 200px;
   -webkit-transition: height 0.4s;
   transition: height 0.4s;
 }
 
 header .nav-list .expandFirstList {
-  height: 110px;
+  height: 100px;
   -webkit-transition: height 0.4s;
   transition: height 0.4s;
 }

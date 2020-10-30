@@ -75,6 +75,15 @@ header .nav-list .expandServicesList {
   transition: height 0.4s;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  header .nav-list {
+    /* CSS */
+  }
+  header .nav-list .expandServicesList {
+    height: 225px !important;
+  }
+}
+
 header .nav-list .expandFirstList {
   height: 110px;
   -webkit-transition: height 0.4s;

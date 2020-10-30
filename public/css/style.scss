@@ -93,6 +93,19 @@ header {
             transition: height 0.4s
         }
 
+        @media (min-width: 320px) and (max-width: 480px) {
+
+
+            .expandServicesList {
+                height: 225px !important;
+
+            }
+
+
+            /* CSS */
+
+        }
+
         .expandFirstList {
             // display: none;
             height: 110px;

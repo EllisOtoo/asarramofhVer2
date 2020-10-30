@@ -28,15 +28,14 @@ h4 {
   margin-left: 0px;
 }
 
-#mainPageNav {
-  position: fixed;
-  top: 0;
-  background-color: white;
-  width: 100vw;
-  padding-bottom: 2px;
-  z-index: 10;
-}
-
+/* #mainPageNav {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100vw;
+    padding-bottom: 2px;
+    z-index: 10;
+} */
 header {
   /* Smartphones (portrait and landscape) ----------- */
 }
@@ -70,13 +69,13 @@ header .nav-list a {
 }
 
 header .nav-list .expandServicesList {
-  height: 200px;
+  height: 230px;
   -webkit-transition: height 0.4s;
   transition: height 0.4s;
 }
 
 header .nav-list .expandFirstList {
-  height: 100px;
+  height: 110px;
   -webkit-transition: height 0.4s;
   transition: height 0.4s;
 }
@@ -273,7 +272,7 @@ header img {
   background: #114A69;
 }
 
-.clientbox-4 {
+.banner .clientbox-4 {
   position: relative;
   top: -100px;
 }

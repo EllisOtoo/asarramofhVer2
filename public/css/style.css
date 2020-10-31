@@ -28,6 +28,17 @@ h4 {
   margin-left: 0px;
 }
 
+.banner > div {
+  padding: 0px 0px;
+  /*  h1 {
+        // display: none;
+    } */
+}
+
+main {
+  margin-top: 50px;
+}
+
 #mainPageNav {
   position: fixed;
   top: 0;

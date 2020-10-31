@@ -1,9 +1,23 @@
 let testNav = document.querySelector('.nav-list');
 let slideButton = document.querySelector('#slideButton');
 let burger = document.querySelector('.burger');
+let paddingColumns = document.getElementsByClassName('paddingColumn');
 
 
+
+for (let i=0 ; i<paddingColumns.length; i++) {
+    paddingColumns[i].addEventListener('click', slideTestDiv) 
+}
+
+// console.log (paddingColumns[0])
 burger.addEventListener('click', slideTestDiv);
+
+
+
+console.log(paddingColumns.length)
+
+
+
 
 function slideTestDiv() {
     testNav.classList.toggle('nav-clicked')
@@ -11,8 +25,11 @@ function slideTestDiv() {
 
 
 
-let firstLi = document.querySelectorAll('.nav-list>ul>li')[0];
-let secondLi = document.querySelectorAll('.nav-list>ul>li')[1];
+// let firstLi = document.querySelectorAll('.nav-list>ul>li')[0];
+// let secondLi = document.querySelectorAll('.nav-list>ul>li')[1];
+
+let firstLi = document.querySelector ('#servicesMenu')
+let secondLi = document.querySelector ('#softwaresMenu')
 
 let subMenu1 = document.querySelector('#subMenu1');
 let subMenu2 = document.querySelector('#subMenu2');

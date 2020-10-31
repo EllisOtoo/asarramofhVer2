@@ -6,7 +6,10 @@
     padding: 0;
 }
 
-
+ul.main-nav {
+    // display: none;
+    width: 60vw;
+}
 
 @mixin centerSection {
     width: 90vw;
@@ -82,7 +85,7 @@ header {
         position: fixed;
         z-index: 2;
         margin-top: 8px;
-
+        display: flex;
         // Change translate X back to 100% after testing::
         transform: translateX(100%);
         transition: transform 0.5s ease-in-out;
@@ -92,6 +95,36 @@ header {
         // opacity: 0.98;
         top: 5vh;
         width: 100vw;
+
+        #middleChild {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #leftSideCol {
+            width: 20vw;
+            height: 100vh;
+            // background-color: khaki;
+        }
+
+        #rideSideCol {
+            width: 55vw;
+            height: 100vh;
+            // background-color: khaki;
+
+        }
+
+        /*         .paddingColumn {
+            
+        } */
+
+        #menuTopcol,
+        #menulowcol {
+            height: 20vh;
+            width: auto;
+            // background-color: khaki;
+
+        }
 
         a {
             color: #fff;
@@ -154,8 +187,8 @@ header {
             // padding-top: 50px;
             width: max-content;
             // Max-content width to match exact with of child elements
-            margin: 0 auto;
-            margin-top: 23vh;
+            // margin: 0 auto;
+            // margin-top: 23vh;
             font-family: $header-font !important;
             list-style: none;
             font-size: 15pt !important;

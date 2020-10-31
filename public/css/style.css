@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+ul.main-nav {
+  width: 60vw;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -57,6 +61,9 @@ header .nav-list {
   position: fixed;
   z-index: 2;
   margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
@@ -68,11 +75,40 @@ header .nav-list {
   height: 95vh;
   top: 5vh;
   width: 100vw;
+  /*         .paddingColumn {
+            
+        } */
   /*  ul>li {
             overflow-y: hidden;
             transition: height 2s;
         }
         */
+}
+
+header .nav-list #middleChild {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .nav-list #leftSideCol {
+  width: 20vw;
+  height: 100vh;
+}
+
+header .nav-list #rideSideCol {
+  width: 55vw;
+  height: 100vh;
+}
+
+header .nav-list #menuTopcol,
+header .nav-list #menulowcol {
+  height: 20vh;
+  width: auto;
 }
 
 header .nav-list a {
@@ -125,8 +161,6 @@ header .nav-list ul.main-nav {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin: 0 auto;
-  margin-top: 23vh;
   font-family: "Roboto Condensed" !important;
   list-style: none;
   font-size: 15pt !important;

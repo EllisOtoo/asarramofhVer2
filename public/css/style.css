@@ -107,8 +107,15 @@ header .nav-list #rideSideCol {
 
 header .nav-list #menuTopcol,
 header .nav-list #menulowcol {
-  height: 20vh;
   width: auto;
+}
+
+header .nav-list #menuTopcol {
+  height: 20vh;
+}
+
+header .nav-list #menulowcol {
+  height: 50vh;
 }
 
 header .nav-list a {

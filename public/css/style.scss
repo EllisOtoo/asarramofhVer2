@@ -120,10 +120,16 @@ header {
 
         #menuTopcol,
         #menulowcol {
-            height: 20vh;
             width: auto;
             // background-color: khaki;
+        }
 
+        #menuTopcol {
+            height: 20vh;
+        }
+
+        #menulowcol {
+            height: 50vh;
         }
 
         a {

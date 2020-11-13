@@ -51,7 +51,7 @@ function handleMailRequest(req, res) {
         secure: true,
         auth: {
             user: 'ellisotoo@gmail.com',
-            pass: 'Thinkglobal1a2'
+            pass: 'thinkglobal11a'
         }
         /*    host: 'server213.web-hosting.com',
            port: 465,

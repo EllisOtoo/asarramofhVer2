@@ -55,11 +55,10 @@ app.post('/requestForProposal',  (req, res)=> {
         auth: {
             user: 'prospects@asarramofh.com',
             pass: 'asarfocus2020Sucess'
-        }/* ,
+        } /*,
         tls: {
             rejectUnauthorized: false
         } */
-      
     });
 
 
@@ -104,7 +103,7 @@ function handleMailRequest(req, res) {
         secure: true,
         auth: {
             user: 'ellisotoo@gmail.com',
-            pass: 'thinkglobal11a'
+            pass: 'Thinkglobal1a2'
         }
         /*    host: 'server213.web-hosting.com',
            port: 465,

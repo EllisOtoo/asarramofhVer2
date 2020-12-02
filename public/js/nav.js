@@ -14,10 +14,6 @@ burger.addEventListener('click', slideTestDiv);
 
 
 
-console.log(paddingColumns.length)
-
-
-
 
 function slideTestDiv() {
     testNav.classList.toggle('nav-clicked')

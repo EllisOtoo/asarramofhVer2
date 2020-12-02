@@ -1,0 +1,264 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quickbooks Softwares</title>
+    <%include partials/headHTML.ejs%>
+    <link rel="stylesheet" href="css/productImagesMulti.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/proposalRequestForm.css">
+</head>
+
+<body>
+    <%include partials/header.ejs%>
+    <main>
+        <section class="banner">
+            <!-- <div>
+                <h1 id="title">QuickBooks Softwares </h1>
+            </div> -->
+           <h2 class='qbCallHeader' style="font-size: 1.6em;text-align: right; padding-right: 20px;"> <i class="fas fa-phone fa-xs"></i>
+            Talk to Us: <br>
+                 (+233) 24 388 9967</h2>
+        </section>
+<div class="quickBookIntroText">
+    <h1>QUICKBOOKS GHANA AFRICA</h1>
+    <p>ASAR RAMOFH is an authorised reseller and certified partner for QuickBooks. We provide end-to-end QuickBooks support for businesses in Ghana and parts of Africa.</p>
+    <h3>QuickBooks Sales and Customization</h3>
+    <p>Beyond sales and installations, we provide tailored customization support services that allow the user an easy, convenient, and effective use of the Software.</p>
+    <h3>QuickBooks Training</h3>
+    <p>Our trainings are practical and interactive, aimed at giving you a hand on and immediate usability of your accounting software.</p>
+    <h3>QB Aftersales Support</h3>
+    <p> We provide after sales support to ensure you have access to continued support beyond the implementation phase.</p>
+<div style="display: flex; justify-content: center;">
+  <form  id="firstForm" method="POST" class="login-form" action="/requestForProposal">
+    <h3>Request for Quote</h3>
+    <p id="requestSuccessMsg"><%= successMsg %></p>
+    <div class="form-input-material">
+      <input type="text" name="Username" placeholder="Name" autocomplete="off" class="form-control-material" required />
+      <!-- <label for="username">Name</label> -->
+    </div>
+    <div class="form-input-material">
+      <input type="tel" name="mobileNumber" placeholder="Mobile Number" autocomplete="off" class="form-control-material" required />
+      <!-- <label for="password">Mobile Number</label> -->
+    </div>
+    <div class="form-input-material">
+      <input type="email" name="email" placeholder="Email" autocomplete="off" class="form-control-material" required />
+      <!-- <label for="password">Mobile Number</label> -->
+    </div>
+    <div class="form-input-material">
+      <input type="text" name="businessNameAndLocation"  placeholder="Business name and Location" autocomplete="off" class="form-control-material" required />
+      <!-- <label for="password">Mobile Number</label> -->
+    </div>
+    <div class="form-input-material">
+      <input type="number" name="licenseNumber" placeholder="Number of user licenses required" autocomplete="off" class="form-control-material" required />
+      <!-- <label for="password">Mobile Number</label> -->
+    </div>
+    <div class="form-input-material">
+      <input type="text" name="AdditionalInformation" placeholder="Additional information" autocomplete="off" class="form-control-material" required />
+      <!-- <label for="password">Mobile Number</label> -->
+    </div>
+    <button type="submit" class="btn btn-primary btn-ghost">Request Proposal</button>
+  </form>
+  
+</div>
+<!-- <label for="AdditionalFormInfo">Additional information:</label>
+<textarea name="AdditionalFormInfo" form="firstForm" id="" cols="60" rows="1"></textarea>
+     -->
+</div>
+<div class="accordion container" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">QUICKBOOKS</button>
+        </h2> 
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+            QuickBooks is an accounting software ideal for Micro, Small and Medium Sized Entities (MSMEs). There are now two QuickBooks solutions for your business; QuickBooks Desktop and QuickBooks online.
+            <br>
+            <br>
+            <ul">
+                <li>QuickBooks Desktop</li>
+                <li>QuickBooks Online</li>
+                <li>QuickBooks Training</li>
+                <li>QuickBooks Support</li>
+                <li>Compare QuickBooks vs QuickBooks Online</li>
+            </ul>
+            <h3>QuickBooks Version</h3>
+            <ul>
+              <li>QB Desktop</li>
+              <li>QB Online</li>
+              <li>I'm not Sure</li>
+            </ul>
+            <h3>QuickBooks Variant</h3>
+            <ul>
+              <li>QuickBooks UK</li>
+              <li>QuickBooks US</li>
+              <li>QuickBooks Canada</li>
+              <li>QuickBooks Australia</li>
+              <li>I'm not Sure</li>
+            </ul>
+            <h3>QuickBooks Online</h3>
+            <ul>
+              <li>QuickBooks Simple start</li>
+              <li>QuickBooks Plus</li>
+              <li>QuickBooks Advance</li>
+            </ul>
+            
+        </div>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            QB DESKTOP</button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+            QB Desktop is the version of QuickBooks that is stored locally on the server or computer.
+            If you require two or more computers to work on the same company file at the same time (multiuser access), then the company file must be stored on a server which is networked with the computers on which the QuickBooks software are installed.
+            There are multiple variants of QuickBooks designed primarily for different jurisdictions. E.g. QB UK, QB US, QB Canada etc
+        </div>
+        <div id="secondForm">
+          <form id='requestForQuote' class="login-form" action="javascript:void(0);">
+            <h3>Request for Quote</h3>
+            <div class="form-input-material">
+              <input type="text" name="username" id="username" placeholder="Name" autocomplete="off" class="form-control-material" required />
+              <!-- <label for="username">Name</label> -->
+            </div>
+            <div class="form-input-material">
+              <input type="password" name="mobile Number" id="mobile Number" placeholder="Mobile Number" autocomplete="off" class="form-control-material" required />
+              <!-- <label for="password">Mobile Number</label> -->
+            </div>
+            <div class="form-input-material">
+              <input type="password" name="Email" id="email" placeholder="Email" autocomplete="off" class="form-control-material" required />
+              <!-- <label for="password">Mobile Number</label> -->
+            </div>
+            <div class="form-input-material">
+              <input type="password" name="Email" id="BusinessNameAndLocation03" placeholder="Business name and Location" autocomplete="off" class="form-control-material" required />
+              <!-- <label for="password">Mobile Number</label> -->
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-ghost">Request Quote</button>
+          </form>
+        </div>
+        <div id="collapseButtons">
+          <p id="toggleOpen"> Request for Proposal</p>
+          <p id="toggleOpen02">Request for Call</p>
+        </div>
+                             
+        <div id="twoFormsBoxes">
+          <div id="requestForProposalDiv" class="formDiv">
+            
+            
+            
+            <form  id="requestForProposal" class="login-form" action="javascript:void(0);">
+                <h3>Request for Proposal</h3>
+                <div class="form-input-material">
+                  <input type="text" name="username" id="username01" placeholder="Name" autocomplete="off" class="form-control-material" required />
+                  <!-- <label for="username">Name</label> -->
+                </div>
+                <div class="form-input-material">
+                  <input type="password" name="mobile Number" id="mobileNumber01" placeholder="Mobile Number" autocomplete="off" class="form-control-material" required />
+                  <!-- <label for="password">Mobile Number</label> -->
+                </div>
+                <div class="form-input-material">
+                  <input type="password" name="Email" id="Email01" placeholder="Email" autocomplete="off" class="form-control-material" required />
+                  <!-- <label for="password">Mobile Number</label> -->
+                </div>
+                <div class="form-input-material">
+                  <input type="password" name="Email" id="BusinessNameAndLocation01" placeholder="Business name and Location" autocomplete="off" class="form-control-material" required />
+                  <!-- <label for="password">Mobile Number</label> -->
+                </div>
+                <div class="form-input-material">
+                  <input type="password" name="Email" id="NumberOfLicense01" placeholder="Number of user licenses required" autocomplete="off" class="form-control-material" required />
+                  <!-- <label for="password">Mobile Number</label> -->
+                </div>
+                <div class="form-input-material">
+                  <input type="password" name="Email" id="AdditionalInformation01" placeholder="Additional information" autocomplete="off" class="form-control-material" required />
+                  <!-- <label for="password">Mobile Number</label> -->
+                </div>
+                <button type="submit" class="btn btn-primary btn-ghost">Request Proposal</button>
+              </form>
+
+          </div>               
+          <div class="formDiv">
+            <form id='requestFoACall' class="login-form" action="javascript:void(0);">
+              <h3>Request for a call                </h3>
+              <div class="form-input-material">
+                <input type="text" name="username" id="username02" placeholder="Name" autocomplete="off" class="form-control-material" required />
+                <!-- <label for="username">Name</label> -->
+              </div>
+              <div class="form-input-material">
+                <input type="password" name="mobile Number" id="mobile Number02" placeholder="Mobile Number" autocomplete="off" class="form-control-material" required />
+                <!-- <label for="password">Mobile Number</label> -->
+              </div>
+              <div class="form-input-material">
+                <input type="password" name="Email" id="email02" placeholder="Email" autocomplete="off" class="form-control-material" required />
+                <!-- <label for="password">Mobile Number</label> -->
+              </div>
+              <div class="form-input-material">
+                <input type="password" name="Email" id="businessNameAndLocation02" placeholder="Business name and Location" autocomplete="off" class="form-control-material" required />
+                <!-- <label for="password">Mobile Number</label> -->
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-ghost">Request Call</button>
+            </form>
+          </div>
+
+
+        </div>
+             
+        <ul style="margin-left: 100px !important; margin-bottom: 20px !important;">
+          <li><a href="#">Compare QuickBooks Desktop UK vs US</a> </li>
+          <li> <a href="#">Compare QuickBooks Pro vs Premier vs Enterprise</a> </li>
+        </ul>
+
+      </div>
+    
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            QB ONLINE          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+            The account can be accessed anytime, anywhere once you have internet access.
+This version is subscription based, paid monthly or yearly.
+QUICKBOOKS Online Options:
+<ul style="padding-left: 30px;">
+    <li>QBO Simple Start</li>
+    <li>QBO Plus
+    </li>
+    <li>QBO Advance
+    </li>
+</ul>
+
+
+</div>
+
+
+      </div>
+    </div>
+</div>
+    <%include partials/footer.ejs%>
+    <script src="js/nav.js"></script>
+    <script src="js/openForm.js"></script>
+    <script>
+        // document.querySelector('#title').textContent = document.querySelector('#title').textContent.toLocaleLowerCase();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+
+
+</html>

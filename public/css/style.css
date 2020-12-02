@@ -9,6 +9,23 @@ ul.main-nav {
   width: 60vw;
 }
 
+.qbCallHeader {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  background: linear-gradient(225.32deg, #00c1bf, #53b700);
+  font-family: "Roboto", sans-serif;
+}
+
+.quickBookIntroText {
+  width: 70vw;
+  margin: 30px auto;
+}
+
+#requestSuccessMsg {
+  color: greenyellow;
+}
+
 body {
   overflow-x: hidden;
 }
